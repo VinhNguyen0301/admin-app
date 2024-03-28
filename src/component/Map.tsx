@@ -10,7 +10,7 @@ const Map: React.FC<MapProps> = () => {
         <Geographies geography="/features.json">
           {({ geographies }) =>
             geographies.map((geo) => (
-              <Geography key={geo.rsmKey} geography={geo} />
+              <Geography key={geo.rsmKey} geography={geo} fill="#CBCBFD" />
             ))
           }
         </Geographies>
