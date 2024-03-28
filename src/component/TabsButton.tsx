@@ -18,7 +18,7 @@ const TabsButton: React.FC<TabsButtonProps> = ({
           <li key={index} className="rounded-sm border border-gray-300">
             <a
               href="#"
-              className={`inline-block  px-4 py-2 ${
+              className={`inline-block  px-2 py-1 ${
                 selectedTab === tab
                   ? "bg-indigo-600 text-white"
                   : "bg-gray-100 hover:bg-gray-50 hover:text-gray-900 dark:hover:bg-gray-800 dark:hover:text-white"

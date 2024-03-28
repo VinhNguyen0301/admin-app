@@ -40,7 +40,7 @@ const Page: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-full rounded-lg bg-[#EFF0F1] p-16 shadow-lg">
+    <div className="w-full rounded-lg bg-[##F4F7FD] p-16 shadow-lg">
       <div className="mt-14 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
         <div className="rounded-3xl bg-white p-6">
           <div style={{ height: "400px" }}>
@@ -55,8 +55,8 @@ const Page: React.FC = () => {
             onTabClick={handleTabClick}
           />
 
-          <div className="flex pt-6">
-            <p className="grow text-center font-popi text-2xl font-medium text-[#5E37FF]">
+          <div className="flex pt-4">
+            <p className="grow text-center font-popi text-2xl font-medium text-[#1E285C]">
               Product Transactions Chart
             </p>
           </div>
@@ -71,8 +71,8 @@ const Page: React.FC = () => {
             onTabClick={handleTabClick}
           />
 
-          <div className="flex pt-6">
-            <p className="grow text-center font-popi text-2xl font-medium text-[#5E37FF]">
+          <div className="flex pt-4">
+            <p className="grow text-center font-popi text-2xl font-medium text-[#1E285C]">
               Product Volume by Country
             </p>
           </div>
@@ -106,22 +106,22 @@ const Page: React.FC = () => {
         <table className="w-full border-collapse  rounded-lg bg-white shadow-lg">
           <thead>
             <tr>
-              <th className="border border-blue-100 bg-[#A3AED0] px-6 py-2 text-center">
+              <th className="border border-blue-100 bg-[#0F0D2D] px-6 py-2 text-center text-white">
                 Product
               </th>
-              <th className="border border-blue-100 bg-[#A3AED0] px-6 py-2 text-center">
+              <th className="border border-blue-100 bg-[#0F0D2D] px-6 py-2 text-center text-white">
                 Transaction
               </th>
-              <th className="border border-blue-100 bg-[#A3AED0] px-6 py-2 text-center">
+              <th className="border border-blue-100 bg-[#0F0D2D] px-6 py-2 text-center text-white">
                 US Dollar Value
               </th>
-              <th className="border border-blue-100 bg-[#A3AED0] px-6 py-2 text-center">
+              <th className="border border-blue-100 bg-[#0F0D2D]  px-6 py-2 text-center text-white">
                 Quantity
               </th>
-              <th className="border border-blue-100 bg-[#A3AED0] px-6 py-2 text-center">
+              <th className="border border-blue-100 bg-[#0F0D2D] px-6  py-2 text-center text-white">
                 Containers
               </th>
-              <th className="border border-blue-100 bg-[#A3AED0] px-6 py-2 text-center">
+              <th className="border border-blue-100 bg-[#0F0D2D] px-6 py-2 text-center text-white">
                 Weight
               </th>
             </tr>
