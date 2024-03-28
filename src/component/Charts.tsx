@@ -14,11 +14,11 @@ interface TableRow {
   containers: string;
   weight: string;
 }
-interface TableProps {
-  data: TableRow[];
-}
+// interface TableProps {
+//   data: TableRow[];
+// }
 
-const Charts: React.FC<TableProps> = () => {
+const Charts: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState("Transactions");
   const [data, setData] = useState<TableRow[]>([]);
 
@@ -37,7 +37,7 @@ const Charts: React.FC<TableProps> = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("src/Component-6/table-data.json");
+        const response = await fetch("src/component/table-data.json");
         const jsonData = await response.json();
         setData(jsonData);
       } catch (error) {

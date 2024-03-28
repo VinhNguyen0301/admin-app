@@ -1,4 +1,4 @@
-import Charts from "./Component-6/Chart";
+import Charts from "./component/Charts";
 
 function App() {
   return (
