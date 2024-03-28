@@ -1,0 +1,66 @@
+[
+    {
+        "product": "Molasses",
+        "transaction": "1.886",
+        "usDollarValue": "5.443.000",
+        "quantity": "175.132",
+        "containers": "498",
+        "weight": "2.951.359"
+    },
+    {
+        "product": "Tobacco",
+        "transaction": "2.106",
+        "usDollarValue": "2.104.177",
+        "quantity": "1.804.932",
+        "containers": "214",
+        "weight": "3.013.854"
+    },
+    {
+        "product": "Al Fakher",
+        "transaction": "2.537",
+        "usDollarValue": "4.124.177",
+        "quantity": "19.949.685",
+        "containers": "256",
+        "weight": "2.629.463"
+    },
+    {
+        "product": "Cartoon",
+        "transaction": "2.537",
+        "usDollarValue": "4.124.177",
+        "quantity": "19.949.685",
+        "containers": "256",
+        "weight": "2.629.463"
+    },
+    {
+        "product": "Shoe",
+        "transaction": "2.537",
+        "usDollarValue": "4.124.177",
+        "quantity": "19.949.685",
+        "containers": "256",
+        "weight": "2.629.463"
+    },
+    {
+        "product": "Banana",
+        "transaction": "2.537",
+        "usDollarValue": "4.124.177",
+        "quantity": "19.949.685",
+        "containers": "256",
+        "weight": "2.629.463"
+    },
+    {
+        "product": "Cotton",
+        "transaction": "2.537",
+        "usDollarValue": "4.124.177",
+        "quantity": "19.949.685",
+        "containers": "256",
+        "weight": "2.629.463"
+    },
+    {
+        "product": "Shirt Button",
+        "transaction": "2.537",
+        "usDollarValue": "4.124.177",
+        "quantity": "19.949.685",
+        "containers": "256",
+        "weight": "2.629.463"
+    }
+]
