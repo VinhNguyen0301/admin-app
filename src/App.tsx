@@ -1,9 +1,9 @@
-import Charts from "./component/Charts";
+import Page from "./component/Page";
 
 function App() {
   return (
     <h1 className="flex min-h-screen w-full items-center justify-center bg-[#E6EFFA]">
-      <Charts />
+      <Page />
     </h1>
   );
 }

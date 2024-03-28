@@ -5,6 +5,7 @@ import { barChartDataDailyTraffic } from "./variables/charts";
 import { barChartOptionsDailyTraffic } from "./variables/charts";
 import BarChart from "./BarChart/BarChart";
 import TabsButton from "./TabsButton";
+import tableData from "./table-data.json";
 
 interface TableRow {
   product: string;
@@ -18,7 +19,7 @@ interface TableRow {
 //   data: TableRow[];
 // }
 
-const Charts: React.FC = () => {
+const Page: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState("Transactions");
   const [data, setData] = useState<TableRow[]>([]);
 
@@ -35,17 +36,7 @@ const Charts: React.FC = () => {
   };
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("src/component/table-data.json");
-        const jsonData = await response.json();
-        setData(jsonData);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-
-    fetchData();
+    setData(tableData);
   }, []);
 
   return (
@@ -166,4 +157,4 @@ const Charts: React.FC = () => {
   );
 };
 
-export default Charts;
+export default Page;
