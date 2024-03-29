@@ -6,6 +6,8 @@ import { barChartOptionsDailyTraffic } from "./variables/charts";
 import BarChart from "./BarChart/BarChart";
 import TabsButton from "./TabsButton";
 import tableData from "./table-data.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSort } from "@fortawesome/free-solid-svg-icons";
 
 interface TableRow {
   product: string;
@@ -56,7 +58,7 @@ const Page: React.FC = () => {
           />
 
           <div className="flex pt-4">
-            <p className="grow text-center font-popi text-2xl font-medium text-[#1E285C]">
+            <p className="grow text-center font-popi text-2xl font-bold  text-[#1E285C]">
               Product Transactions Chart
             </p>
           </div>
@@ -72,7 +74,7 @@ const Page: React.FC = () => {
           />
 
           <div className="flex pt-4">
-            <p className="grow text-center font-popi text-2xl font-medium text-[#1E285C]">
+            <p className="grow text-center font-popi text-2xl font-bold text-[#1E285C]">
               Product Volume by Country
             </p>
           </div>
@@ -106,23 +108,41 @@ const Page: React.FC = () => {
         <table className="w-full border-collapse  rounded-lg bg-white shadow-lg">
           <thead>
             <tr>
-              <th className="border border-blue-100 bg-[#0F0D2D] px-6 py-2 text-center text-white">
-                Product
+              <th className="border border-blue-100 bg-[#0F0D2D] px-6 py-2 text-center font-medium text-white">
+                Product{" "}
+                <span className="ml-2">
+                  <FontAwesomeIcon icon={faSort} />
+                </span>
               </th>
-              <th className="border border-blue-100 bg-[#0F0D2D] px-6 py-2 text-center text-white">
+              <th className="border border-blue-100 bg-[#0F0D2D] px-6 py-2 text-center font-medium text-white">
                 Transaction
+                <span className="ml-2">
+                  <FontAwesomeIcon icon={faSort} />
+                </span>
               </th>
-              <th className="border border-blue-100 bg-[#0F0D2D] px-6 py-2 text-center text-white">
+              <th className="border border-blue-100 bg-[#0F0D2D] px-6 py-2 text-center font-medium text-white">
                 US Dollar Value
+                <span className="ml-2">
+                  <FontAwesomeIcon icon={faSort} />
+                </span>
               </th>
-              <th className="border border-blue-100 bg-[#0F0D2D]  px-6 py-2 text-center text-white">
+              <th className="border border-blue-100 bg-[#0F0D2D]  px-6 py-2 text-center font-medium text-white">
                 Quantity
+                <span className="ml-2">
+                  <FontAwesomeIcon icon={faSort} />
+                </span>
               </th>
-              <th className="border border-blue-100 bg-[#0F0D2D] px-6  py-2 text-center text-white">
+              <th className="border border-blue-100 bg-[#0F0D2D] px-6  py-2 text-center font-medium text-white">
                 Containers
+                <span className="ml-2">
+                  <FontAwesomeIcon icon={faSort} />
+                </span>
               </th>
-              <th className="border border-blue-100 bg-[#0F0D2D] px-6 py-2 text-center text-white">
+              <th className="border border-blue-100 bg-[#0F0D2D] px-6 py-2 text-center font-medium text-white">
                 Weight
+                <span className="ml-2">
+                  <FontAwesomeIcon icon={faSort} />
+                </span>
               </th>
             </tr>
           </thead>
