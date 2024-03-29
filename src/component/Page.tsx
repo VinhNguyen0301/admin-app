@@ -13,6 +13,9 @@ import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { faMagnifyingGlassPlus } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlassMinus } from "@fortawesome/free-solid-svg-icons";
+import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
+import { faHand } from "@fortawesome/free-regular-svg-icons";
+import { faBullseye } from "@fortawesome/free-solid-svg-icons";
 
 interface TableRow {
   product: string;
@@ -88,9 +91,19 @@ const Page: React.FC = () => {
               className="ml-4 text-[#A8A7FB]"
             />
           </div>
-          <div style={{ height: "400px" }}>
-            <Map />
+          <div
+            style={{ height: "410px", display: "flex", alignItems: "center" }}
+          >
+            <div className="flex flex-col">
+              <FontAwesomeIcon icon={faLocationArrow} />
+              <FontAwesomeIcon icon={faHand} className="mt-4" />
+              <FontAwesomeIcon icon={faBullseye} className="mt-4" />
+            </div>
+            <div style={{ flex: 1 }}>
+              <Map />
+            </div>
           </div>
+
           <TabsButton
             tabs={tabs}
             selectedTab={selectedTab}
