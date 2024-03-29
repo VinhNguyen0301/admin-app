@@ -11,6 +11,8 @@ import { faSort } from "@fortawesome/free-solid-svg-icons";
 import { faChartSimple } from "@fortawesome/free-solid-svg-icons";
 import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
+import { faMagnifyingGlassPlus } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlassMinus } from "@fortawesome/free-solid-svg-icons";
 
 interface TableRow {
   product: string;
@@ -76,6 +78,16 @@ const Page: React.FC = () => {
           </div>
         </div>
         <div className="rounded-3xl bg-white p-6">
+          <div className="flex justify-end">
+            <FontAwesomeIcon
+              icon={faMagnifyingGlassPlus}
+              className="ml-4 text-[#A8A7FB]"
+            />
+            <FontAwesomeIcon
+              icon={faMagnifyingGlassMinus}
+              className="ml-4 text-[#A8A7FB]"
+            />
+          </div>
           <div style={{ height: "400px" }}>
             <Map />
           </div>
