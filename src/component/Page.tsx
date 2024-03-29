@@ -8,6 +8,9 @@ import TabsButton from "./TabsButton";
 import tableData from "./table-data.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
+import { faChartSimple } from "@fortawesome/free-solid-svg-icons";
+import { faChartLine } from "@fortawesome/free-solid-svg-icons";
+import { faClock } from "@fortawesome/free-regular-svg-icons";
 
 interface TableRow {
   product: string;
@@ -45,6 +48,15 @@ const Page: React.FC = () => {
     <div className="w-full rounded-lg bg-[##F4F7FD] p-16 shadow-lg">
       <div className="mt-14 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
         <div className="rounded-3xl bg-white p-6">
+          <div>
+            <FontAwesomeIcon
+              icon={faChartSimple}
+              className="ml-4 text-[#A8A7FB]"
+            />
+            <FontAwesomeIcon icon={faClock} className=" ml-4" />
+            <FontAwesomeIcon icon={faChartLine} className=" ml-4" />
+          </div>
+
           <div style={{ height: "400px" }}>
             <BarChart
               chartData={barChartDataDailyTraffic}
